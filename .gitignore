@@ -1,0 +1,3 @@
+resources/.terraform/*
+resource/terraform.tfstate
+resource/terraform.tfstate.backup
