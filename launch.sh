@@ -5,8 +5,8 @@ for y in terraform aws;
   do
     _PROGNAME=$y
     if ! hash ${_PROGNAME} >/dev/null 2>&1; then
-    printf "installing -  ${_PROGNAME} ...."
-    ../install-${_PROGNAME}.sh
+    printf "missing -  ${_PROGNAME} ....! exiting"
+    exit 1
     fi
 done
 
