@@ -12,7 +12,7 @@ write_files:
         #!/bin/sh
         set -x
         cd /root
-        git clone --branch master --single-branch https://github.com/lv0/emalloy-ro-test-ansible.git aws
+        git clone --branch master --single-branch https://github.com/emalloy/emalloy-infra-test-ansible.git aws
         cd /root
         pip install -q -r ./aws/requirements.txt
         mkdir -p /etc/ansible
